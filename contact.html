@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #f4f4f4, #e0e0e0);
+            color: #333;
+        }
+        .sidebar-menu {
+            background-color: #2C3E50;
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar-menu a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .sidebar-menu a:hover {
+            color: #1ABC9C;
+        }
+        .contact-info {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: #1ABC9C;
+            font-weight: 600;
+        }
+        .card {
+            border: none;
+            border-radius: 12px;
+            transition: all 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <nav class="sidebar-menu d-flex flex-column p-3">
+            <h1 class="text-center mb-4">
+                <a href="index.html" class="text-white text-decoration-none">Smart Home</a>
+            </h1>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-3">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item mb-3">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item mb-3">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+                <li class="nav-item mb-3">
+                    <a href="login.html" class="nav-link">Login</a>
+                </li>
+                <li class="nav-item mb-3">
+                    <a href="controlHome.html" class="nav-link">Home Control</a>
+                </li>
+                <li class="nav-item mb-3">
+                    <a href="control.html" class="nav-link">Control</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main-content p-4 w-100">
+            <div class="contact-info">
+                <h2 class="mb-4 text-center">Contact Information</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card p-4 shadow-sm mb-3">
+                            <div class="card-body text-center">
+                                <i class="fas fa-user-circle fa-3x mb-3 text-primary"></i>
+                                <h5 class="card-title">Ernest Seithalilov</h5>
+                                <p class="card-text"><i class="fas fa-phone-alt me-2"></i>+972-505588520</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card p-4 shadow-sm">
+                            <div class="card-body text-center">
+                                <i class="fas fa-user-circle fa-3x mb-3 text-primary"></i>
+                                <h5 class="card-title">Kirill Nosov</h5>
+                                <p class="card-text"><i class="fas fa-phone-alt me-2"></i>+972-529556935</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="mailto:smarthome.EK@ramber.ru" class="btn btn-primary">
+                        <i class="fas fa-envelope me-2"></i>Send Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

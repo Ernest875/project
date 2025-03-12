@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* קובע את הגופן הכללי של הדף והרקע */
+        body {
+            font-family: 'Poppins', sans-serif; /* שימוש בגופן "Poppins" */
+            background-color: #f4f4f4; /* צבע רקע אפור בהיר */
+        }
+        
+        /* עיצוב התפריט הצדדי */
+        .sidebar-menu {
+            background-color: #2C3E50; /* צבע רקע כהה */
+            color: #fff; /* צבע טקסט לבן */
+            min-height: 100vh; /* גובה מינימלי - כל גובה המסך */
+            padding: 20px; /* ריפוד פנימי */
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* צל קל מצד ימין */
+        }
+        
+        /* עיצוב הקישורים בתפריט הצדדי */
+        .sidebar-menu a {
+            color: #fff; /* צבע טקסט לבן */
+            text-decoration: none; /* ללא קו תחתון */
+        }
+        
+        /* שינוי צבע קישורים בעת מעבר עכבר */
+        .sidebar-menu a:hover {
+            color: #1ABC9C; /* צבע ירקרק להדגשה */
+        }
+        
+        /* עיצוב הקופסה המרכזית של התוכן */
+        .content {
+            background: #fff; /* רקע לבן */
+            padding: 20px; /* ריפוד פנימי */
+            border-radius: 8px; /* פינות מעוגלות */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* צל עדין */
+        }
+        
+        /* עיצוב התמונות והווידאו בתוך הקופסה */
+        .smart-home-images img, .smart-home-images video {
+            border-radius: 8px; /* פינות מעוגלות */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* צל קל */
+            transition: transform 0.3s, box-shadow 0.3s; /* אנימציה חלקה */
+            margin: 10px; /* מרווח בין האלמנטים */
+        }
+        
+        /* אפקט גדילה והדגשת הצל בעת מעבר עכבר */
+        .smart-home-images img:hover, .smart-home-images video:hover {
+            transform: scale(1.05); /* הגדלה קלה */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* צל מודגש יותר */
+        }
+    </style>
+</head>
+<body>
+    <div class="d-flex">
+        <!-- תפריט צדדי -->
+        <nav class="sidebar-menu d-flex flex-column p-3">
+            <h1 class="text-center mb-4">
+                <a href="index.html" class="text-white text-decoration-none">Smart Home</a>
+            </h1>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-3">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item mb-3">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item mb-3">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item mb-3">
+                    <a href="login.html" class="nav-link">Login</a>
+                </li>
+                <li class="nav-item mb-3">
+                    <a href="controlHome.html" class="nav-link">HomeControl</a>
+                </li>
+                <li class="nav-item mb-3">
+                    <a href="control.html" class="nav-link">Control</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- תוכן ראשי -->
+        <div class="main-content p-4 w-100">
+            <div class="content">
+                <h2 class="mb-4 text-center">About Smart Home</h2>
+                <p>
+                    Smart home technology offers the latest advancements in convenience, comfort, and security. Using IoT (Internet of Things),
+                    a smart home connects various devices and systems like lighting, security, and climate control, enabling you to manage them 
+                    remotely and even automate tasks.
+                </p>
+                <div class="smart-home-images d-flex flex-wrap justify-content-center">
+                    <img src="livingroom.jpg" alt="Smart living room" class="img-fluid" style="max-width: 30%;">
+                    <img src="kitchen.jpeg" alt="Smart kitchen" class="img-fluid" style="max-width: 30%;">
+                    <img src="bedroom.jpg" alt="Smart bedroom" class="img-fluid" style="max-width: 30%;">
+                    <video width="320" height="240" controls>
+                        <source src="smarthome.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ייבוא Bootstrap JS כדי שהתפריטים יעבדו -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
